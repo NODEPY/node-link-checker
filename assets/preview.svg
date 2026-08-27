@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">NØDE Link Checker terminal preview</title>
+  <desc id="description">A terminal window showing working and broken links found by the tool.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0b1830"/>
+      <stop offset="1" stop-color="#14102c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5de4ff"/>
+      <stop offset="1" stop-color="#8d7cff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1040" cy="80" r="270" fill="#5275ff" opacity="0.09"/>
+  <circle cx="90" cy="620" r="280" fill="#5de4ff" opacity="0.06"/>
+
+  <g transform="translate(94 68)">
+    <text x="0" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="800" letter-spacing="3">NØDE LINK CHECKER</text>
+    <rect x="0" y="48" width="236" height="4" rx="2" fill="url(#accent)"/>
+    <text x="0" y="88" fill="#96a8c9" font-family="system-ui, sans-serif" font-size="18">Find broken internal links before your visitors do.</text>
+  </g>
+
+  <g transform="translate(94 190)" filter="url(#shadow)">
+    <rect width="1012" height="352" rx="22" fill="#080d19" stroke="#32405d" stroke-width="2"/>
+    <rect width="1012" height="52" rx="22" fill="#111a2c"/>
+    <path d="M0 52h1012" stroke="#32405d" stroke-width="2"/>
+    <circle cx="28" cy="26" r="7" fill="#ff6b75"/>
+    <circle cx="52" cy="26" r="7" fill="#ffd166"/>
+    <circle cx="76" cy="26" r="7" fill="#5fdb94"/>
+    <text x="506" y="33" text-anchor="middle" fill="#8090ad" font-family="ui-monospace, monospace" font-size="15">terminal</text>
+
+    <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18">
+      <text x="30" y="94" fill="#9eb0ce">$ <tspan fill="#edf5ff">python link_checker.py example.com --limit 10</tspan></text>
+      <circle cx="39" cy="137" r="7" fill="#5fdb94"/>
+      <text x="58" y="143" fill="#dbe8fa">200  https://example.com/</text>
+      <text x="930" y="143" text-anchor="end" fill="#6f819e">184 ms</text>
+      <circle cx="39" cy="180" r="7" fill="#5fdb94"/>
+      <text x="58" y="186" fill="#dbe8fa">200  https://example.com/about</text>
+      <text x="930" y="186" text-anchor="end" fill="#6f819e">121 ms</text>
+      <circle cx="39" cy="223" r="7" fill="#ff6b75"/>
+      <text x="58" y="229" fill="#ff9ca4">404  https://example.com/old-page</text>
+      <text x="930" y="229" text-anchor="end" fill="#6f819e">98 ms</text>
+      <path d="M30 257h922" stroke="#24314a"/>
+      <text x="30" y="298" fill="#91a3bf">Checked: <tspan fill="#ffffff">3</tspan></text>
+      <text x="215" y="298" fill="#91a3bf">Working: <tspan fill="#5fdb94">2</tspan></text>
+      <text x="415" y="298" fill="#91a3bf">Broken: <tspan fill="#ff6b75">1</tspan></text>
+      <text x="30" y="330" fill="#5de4ff">Report saved: report.json</text>
+    </g>
+  </g>
+
+  <text x="1106" y="594" text-anchor="end" fill="#63728f" font-family="system-ui, sans-serif" font-size="14" letter-spacing="1.4">PYTHON · REQUESTS · BEAUTIFULSOUP</text>
+</svg>

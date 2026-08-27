@@ -1,0 +1,63 @@
+{
+  "target": "https://example.com/",
+  "canonical_target": "https://example.com/",
+  "generated_at": "2026-08-27T18:30:00+00:00",
+  "settings": {
+    "limit": 10,
+    "timeout": 8.0,
+    "delay": 0.1
+  },
+  "summary": {
+    "checked": 3,
+    "working": 2,
+    "broken": 1,
+    "redirects": 0,
+    "external_skipped": 1
+  },
+  "limit_reached": false,
+  "external_links": [
+    "https://external.example/"
+  ],
+  "results": [
+    {
+      "url": "https://example.com/",
+      "final_url": "https://example.com/",
+      "status": 200,
+      "ok": true,
+      "response_time_ms": 184,
+      "redirect_count": 0,
+      "content_type": "text/html; charset=utf-8",
+      "html_truncated": false,
+      "error": null,
+      "sources": []
+    },
+    {
+      "url": "https://example.com/about",
+      "final_url": "https://example.com/about",
+      "status": 200,
+      "ok": true,
+      "response_time_ms": 121,
+      "redirect_count": 0,
+      "content_type": "text/html; charset=utf-8",
+      "html_truncated": false,
+      "error": null,
+      "sources": [
+        "https://example.com/"
+      ]
+    },
+    {
+      "url": "https://example.com/old-page",
+      "final_url": "https://example.com/old-page",
+      "status": 404,
+      "ok": false,
+      "response_time_ms": 98,
+      "redirect_count": 0,
+      "content_type": "text/html; charset=utf-8",
+      "html_truncated": false,
+      "error": null,
+      "sources": [
+        "https://example.com/"
+      ]
+    }
+  ]
+}
